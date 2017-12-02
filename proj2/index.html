@@ -1,0 +1,42 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>simlpleGame</title>
+	<link href="css/login.css" rel="stylesheet" type="text/css" />
+	<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascripts/log.js"></script>
+	<link rel="icon" href="/images/Trollface.png" type="image/x-icon">
+</head>
+<body>
+<div id="wrapper">
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+	
+<form name="login-form" class="login-form" action="/check" method="post">
+
+    <div class="header">
+		<h1>Авторизация</h1>
+		<span>Введите ваши регистрационные данные для входа в ваш личный кабинет. </span>
+    </div>
+
+    <div class="content">
+		<input name="username" type="text" id="input_username" class="input username" value="Логин" onfocus="this.value=''" />
+		<input name="password" type="password" id="input_password" class="input password" value="Пароль" onfocus="this.value=''" />
+		<div class="error"></div>
+	</div>
+
+    <div class="footer">
+		<input type="submit" name="submit" value="ВОЙТИ" id="loginB" class="button" />
+		<input type="submit" name="submit" value="Регистрация" id="regB" class="register" />
+    </div>
+
+</form>
+</div>
+<div class="gradient"></div>
+</body>
+</html>

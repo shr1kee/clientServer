@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>simlpleGame</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <link href="css/reg.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/images/Trollface.png" type="image/x-icon">
+    <script type="text/javascript" src="javascripts/reg.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <form name="login-form" class="reg-form" action="/check" method="post">
+
+        <div class="header">
+            <h1>Регистрация</h1>
+            <span>Введите ваши данные для регистрации. </span>
+        </div>
+
+        <div class="content">
+            <input  name="name" type ="text" id ="input_name" class="input name" value="Имя" onfocus="this.value=''"/>
+            <input  surname="surname" type ="text" id ="input_surname" class="input surname" value="Фамилия" onfocus="this.value=''"/>
+            <input name="username" type="text" id="input_username" class="input username" value="Логин" onfocus="this.value=''" />
+            <input name="password" type="password" id="input_password" class="input password" value="Пароль" onfocus="this.value=''" />
+            <div class="error"></div>
+        </div>
+        <div class="footer">
+            <input type="submit" name="submit" value="Регистрация" id="regB" class="button" />
+        </div>
+    </form>
+</div>
+<div class="gradient"></div>
+</body>
+</html>
